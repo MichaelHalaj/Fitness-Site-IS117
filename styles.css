@@ -1,9 +1,34 @@
 html,
 body {
     height: 100%;
-}
+    --nav-color: #474787;
+    --page-color: #ECECEC ;
+    --footer-color:  #AAABB8;
+    --dark-color: #2C2C54;
 
+}
+nav {
+    background-color: var(--nav-color);
+}
+.navbar-brand, .nav-link, .dropdown-item {
+    color: var(--page-color);
+}
+.dropdown-menu {
+    border-radius: 0;
+    border: 0;
+}
 #page
- {
+{
+    background-color: var(--page-color);
     flex: 1 0 auto;
+}
+footer {
+    background-color: var(--footer-color);
+}
+.dropdown-menu {
+    background-color: var(--nav-color);
+
+}
+.dropdown-item:hover {
+    background-color: var(--nav-color);
 }
