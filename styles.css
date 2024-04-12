@@ -12,6 +12,14 @@ nav {
 }
 .navbar-brand, .nav-link, .dropdown-item {
     color: var(--page-color);
+    font-size: 30px;
+}
+.navbar-toggler {
+    color: var(--page-color) !important;
+    border-color: var(--page-color);
+}
+.navbar-toggler-icon {
+    background-image: url("hamburger.svg");
 }
 .dropdown-menu {
     border-radius: 0;
