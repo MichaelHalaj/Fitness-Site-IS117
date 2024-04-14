@@ -55,3 +55,19 @@ footer {
 .carousel-item {
     height: 24rem;
 }
+.contact-paragraph{
+    font-size: 1.25em;
+    font-weight: 300;
+}
+.contact-me{
+    color: var(--nav-color)
+}
+.submit {
+    font-size: 1.1em;
+    background-color: var(--nav-color);
+    color: white;
+}
+.submit:hover {
+    color: var(--nav-color);
+    border-color: var(--nav-color);
+}
