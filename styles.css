@@ -71,3 +71,6 @@ footer {
     color: var(--nav-color);
     border-color: var(--nav-color);
 }
+.about-image {
+    height: 450px;
+}
