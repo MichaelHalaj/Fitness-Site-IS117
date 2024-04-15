@@ -10,6 +10,9 @@ body {
 nav, .view-details {
     background-color: var(--nav-color);
 }
+.navbar {
+    padding: 0;
+}
 .view-details {
     color: white;
 }
@@ -20,6 +23,7 @@ nav, .view-details {
 .navbar-brand, .nav-link, .dropdown-item {
     color: var(--page-color);
     font-size: 30px;
+    height: 100%;
 }
 .navbar-toggler {
     color: var(--page-color) !important;
@@ -27,9 +31,6 @@ nav, .view-details {
 }
 .navbar-toggler-icon {
     background-image: url("images/hamburger.svg");
-}
-.dropdown-menu {
-
 }
 /*main
 {
@@ -39,10 +40,13 @@ nav, .view-details {
 
 footer {
     background-color: var(--footer-color);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
 }
-.dropdown-menu {
-    background-color: var(--nav-color);
-
+.dropdown-menu[data-bs-popper]{
+    border-width: 0;
+    border-radius: 0;
+    margin: 0;
+     background-color: var(--nav-color); 
 }
 .dropdown-item:hover {
     background-color: var(--nav-color);
@@ -75,11 +79,20 @@ footer {
     height: 450px;
 }
 .nav-link:hover, .dropdown-item:hover {
-    color: var(--footer-color);
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    color: var(--nav-color);
+}
+.nav-link:hover {
+    padding-left: 0.25em;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: white;
+    color: var(--footer-color);
+
 }
 .training-split-headers{
     color: var(--nav-color);
+}
+.card-background {
+    box-shadow: inset 0px 0em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
 }
