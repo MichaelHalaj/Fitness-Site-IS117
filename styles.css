@@ -74,3 +74,12 @@ footer {
 .about-image {
     height: 450px;
 }
+.nav-link:hover, .dropdown-item:hover {
+    color: var(--footer-color);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+.training-split-headers{
+    color: var(--nav-color);
+}
